@@ -14,8 +14,8 @@ class LiveblogConsumer(JsonWebsocketConsumer):
 
     def liveblog_post_deleted(self, event_dict):
         self.send_json(event_dict)
-
-
+        
+        
 class EchoConsumer(JsonWebsocketConsumer):
 
     def receive_json(self, content, **kwargs):
